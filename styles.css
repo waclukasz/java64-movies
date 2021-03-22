@@ -1,0 +1,81 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 80px;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: gainsboro;
+}
+
+.search-input {
+  width: 400px;
+  padding: 3px 8px;
+  margin-right: 12px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  font-size: 1.1rem;
+  font-weight: 300;
+  background-color: transparent;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: darkgray;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  border: 1px solid grey;
+  color: grey;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 0 grey;
+}
+
+.search-btn:active {
+  box-shadow: none;
+}
+
+.main-section {
+  display: flex;
+  padding: 40px 60px;
+}
+
+.movie {
+  display: flex;
+  width: 460px;
+  height: 280px;
+  padding: 18px 24px;
+  border: 1px solid grey;
+  border-radius: 12px;
+  box-shadow: 1px 1px 9px 0 grey;
+}
+
+.movie-poster {
+  height: 210px;
+  margin-right: 22px;
+  object-fit: cover;
+}
+
+.movie-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.movie-plot {
+  font-size: 0.9rem;
+  color: darkgrey;
+  font-weight: 300;
+}
