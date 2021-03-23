@@ -15,6 +15,22 @@ body {
   background-color: gainsboro;
 }
 
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.checkbox-title {
+  font-size: 0.9rem;
+  color: grey;
+}
+
 .search-input {
   width: 400px;
   padding: 3px 8px;
@@ -50,6 +66,7 @@ body {
 
 .main-section {
   display: flex;
+  flex-wrap: wrap;
   padding: 40px 60px;
 }
 
@@ -58,7 +75,7 @@ body {
   width: 460px;
   height: 280px;
   padding: 18px 24px;
-  border: 1px solid grey;
+
   border-radius: 12px;
   box-shadow: 1px 1px 9px 0 grey;
 }
@@ -78,4 +95,34 @@ body {
   font-size: 0.9rem;
   color: darkgrey;
   font-weight: 300;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  min-width: 180px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 9px 0 grey;
+}
+
+.movie-card > .movie-poster {
+  margin-bottom: 12px;
+}
+
+.movie-card > .movie-title {
+  font-size: 0.9rem;
 }

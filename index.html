@@ -20,10 +20,27 @@
   </head>
   <body>
     <nav class="main-nav">
-      <input type="text" class="search-input" placeholder="Search for movie title.." />
-      <button class="search-btn">
-        <i class="fas fa-search"></i>
-      </button>
+      <div>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search for movie title.." />
+          <button class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="checkbox">
+          <input id="searchInMovie" type="checkbox" />
+          <label for="searchInMovie" class="checkbox-title">Search in title..</label>
+        </div>
+        <div>
+          <label for="searchType">Type:</label>
+          <select name="type" id="searchType">
+            <option value="null" selected></option>
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+          </select>
+        </div>
+      </div>
     </nav>
 
     <main class="main-section">
